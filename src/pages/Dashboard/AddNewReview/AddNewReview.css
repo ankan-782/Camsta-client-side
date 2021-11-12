@@ -12,7 +12,13 @@
 }
 @media screen and (min-width: 992px){
     .quote-icon {
-        font-size: 500px;
+        font-size: 300px;
+        opacity: 0.1;
+    }
+}
+@media screen and (min-width: 1200px){
+    .quote-icon {
+        font-size: 400px;
         opacity: 0.1;
     }
 }

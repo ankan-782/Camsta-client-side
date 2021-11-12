@@ -4,7 +4,7 @@
     transition: 0.3s;
 }
 .my-orders-card-info:hover {
-    box-shadow: 0.5px 0.5px 15px 5px rgb(129, 128, 117);
+    box-shadow: 0.5px 0.5px 10px 5px rgb(119, 118, 111);
     transition: 0.3s;
 }
 .status-red-my-order-page {

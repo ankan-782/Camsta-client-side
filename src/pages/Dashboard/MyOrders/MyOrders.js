@@ -40,7 +40,7 @@ const MyOrders = () => {
                         <h1 className="text-center mt-2">No Data Found</h1>
                     </div>
                 )
-                : <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                : <div className="row row-cols-1 row-cols-lg-2 g-5">
                     {
                         myOrders.map(myOrder =>
                             <div className="col">

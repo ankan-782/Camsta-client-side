@@ -32,7 +32,7 @@ const AddNewReview = () => {
             <div className="row g-5">
                 <div className="col-12 col-lg-6">
                     <div className="add-new-review-content-bg">
-                        <form onSubmit={handleSubmit(onSubmit)} className="border border-2 border-dark p-3">
+                        <form onSubmit={handleSubmit(onSubmit)} className="border border-2 border-dark p-4">
                             <div className="mb-3">
                                 <label htmlFor="exampleInputName" className="form-label fs-6">Full Name</label>
                                 <input type="text" className="form-control input-bg-add-new-review py-3 rounded-0" id="exampleInputName" placeholder="Name" defaultValue={user?.displayName} {...register("name")} required />

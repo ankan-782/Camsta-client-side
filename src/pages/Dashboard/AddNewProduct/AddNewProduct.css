@@ -12,7 +12,13 @@
 }
 @media screen and (min-width: 992px){
     .database-icon {
-        font-size: 550px;
+        font-size: 350px;
+        opacity: 0.1;
+    }
+}
+@media screen and (min-width: 1200px){
+    .database-icon {
+        font-size: 450px;
         opacity: 0.1;
     }
 }

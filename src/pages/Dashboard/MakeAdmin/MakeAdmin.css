@@ -12,7 +12,13 @@
 }
 @media screen and (min-width: 992px){
     .user-icon {
-        font-size: 500px;
+        font-size: 300px;
+        opacity: 0.1;
+    }
+}
+@media screen and (min-width: 1200px){
+    .user-icon {
+        font-size: 400px;
         opacity: 0.1;
     }
 }

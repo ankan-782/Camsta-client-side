@@ -8,7 +8,7 @@
 }
 
 .login-content {
-    margin-top: 100px;
+    margin: 100px 0;
 }
 
 .login-content-bg {
@@ -39,6 +39,13 @@
     .login-page {
         min-height: calc(100vh - 58px);
     }
+    .lock-icon {
+        font-size: 400px;
+        opacity: 0.1;
+    }
+}
+
+@media screen and (min-width: 1200px){
     .lock-icon {
         font-size: 500px;
         opacity: 0.1;

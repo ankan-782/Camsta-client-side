@@ -11,9 +11,9 @@ const AboutUs = () => {
             <div className="about-us-content d-flex justify-content-center align-items-center">
                 <div className="container-fluid p-lg-5 p-4">
                     <div className="row g-5">
-                        <div className="col-12 col-lg-6">
+                        <div className="col-12 col-xl-6">
                             <div className="row g-3">
-                                <div className="col-12 col-lg-6">
+                                <div className="col-12 col-md-6">
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">Best Deals</h3>
@@ -21,7 +21,7 @@ const AboutUs = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-lg-6">
+                                <div className="col-12 col-md-6">
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">Best Offers</h3>
@@ -29,7 +29,7 @@ const AboutUs = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-lg-6">
+                                <div className="col-12 col-md-6">
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">Great Cameras</h3>
@@ -37,7 +37,7 @@ const AboutUs = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-lg-6">
+                                <div className="col-12 col-md-6">
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">Fast Booking</h3>
@@ -47,7 +47,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6">
+                        <div className="col-12 col-xl-6">
                             <h5 className="mb-4 border-start border-3 ps-3 border-dark">About Us</h5>
                             <h2 className="mb-4">Get to know a little about us!</h2>
                             <p>For over 34 years, Camsta - Action Camera has dedicated itself to providing service, quality, and professionalism to the photography community. Thanks to our amazing customers, we continue to thrive in our Sylhet location and have since opened up a second store in Fenchuganj, Sylhet.

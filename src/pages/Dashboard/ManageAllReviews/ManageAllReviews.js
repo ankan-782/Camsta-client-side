@@ -40,7 +40,7 @@ const ManageAllReviews = () => {
                 <div className="spinner-grow text-dark" style={{ width: "1.3rem", height: "1.3rem" }} role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>) : (
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-5">
                     {
                         reviews.map(review => (
                             <div className="col">

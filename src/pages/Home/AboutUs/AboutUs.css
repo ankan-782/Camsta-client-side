@@ -35,7 +35,7 @@
     transition: 0.3s ease-in-out;
 }
 .about-card:hover {
-    box-shadow: 0px 0px 30px 5px rgb(100, 102, 88);
+    box-shadow: 0.5px 0.5px 10px 5px rgb(119, 118, 111);
     transition: 0.3s ease-in-out;
 }
 @media screen and (min-width: 992px){

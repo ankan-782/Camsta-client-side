@@ -5,7 +5,7 @@
     transition: 0.3s;
 }
 .reviews-manage-all-reviews-page:hover {
-    box-shadow: 0.5px 0.5px 30px 5px rgb(122, 122, 111);
+    box-shadow: 0.5px 0.5px 10px 5px rgb(119, 118, 111);
     transition: 0.3s;
 }
 .reviews-manage-all-reviews-page-name {

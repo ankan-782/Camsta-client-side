@@ -7,7 +7,7 @@
     opacity: 0.1;
 }
 .registration-content {
-    margin-top: 100px;
+    margin: 100px 0;
 }
 .registration-content-sizing {
     background-color: rgb(252, 255, 240);
@@ -37,6 +37,13 @@
     .registration-page {
         min-height: calc(100vh - 58px);
     }
+    .settings-icon {
+        font-size: 500px;
+        opacity: 0.1;
+    }
+}
+
+@media screen and (min-width: 1200px){
     .settings-icon {
         font-size: 600px;
         opacity: 0.1;

@@ -39,7 +39,7 @@ const ManageAllProducts = () => {
                 <div className="spinner-grow text-dark" style={{ width: "1.3rem", height: "1.3rem" }} role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>) : (
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
+                <div className="row row-cols-1 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-5">
                     {
                         products.map(product => (
                             <div className="col">

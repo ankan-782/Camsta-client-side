@@ -26,7 +26,7 @@ const Home = () => {
                 <div className="home-content">
                     <div className="container p-4 px-lg-0">
                         <h5 className="mb-5 border-start border-3 ps-3 border-dark">Amazing Action Cameras</h5>
-                        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
+                        <div className="row row-cols-1 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-5">
                             {
                                 productsInfo.slice(0, 6).map(product => <ProductsInHome
                                     key={product._id}

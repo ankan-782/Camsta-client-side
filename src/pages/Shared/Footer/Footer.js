@@ -88,7 +88,7 @@ const Footer = () => {
                     </div>
                     <div className="col-12 col-lg-4">
                         <div className="pt-2 ps-2">
-                            <h5 className="fw-bold mb-4">Gallery</h5>
+                            <h5 className="fw-bold mb-4">At a glance</h5>
                             <div className="row g-3">
                                 <div className="col-4">
                                     <img src={img1} alt="" className="w-100" />
