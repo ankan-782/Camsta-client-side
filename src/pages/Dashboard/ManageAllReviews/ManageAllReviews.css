@@ -1,0 +1,51 @@
+.reviews-manage-all-reviews-page {
+    position: relative;
+    background-color: rgb(252, 255, 240);
+    box-shadow: 0.5px 0.5px 10px rgb(117, 117, 107);
+    transition: 0.3s;
+}
+.reviews-manage-all-reviews-page:hover {
+    box-shadow: 0.5px 0.5px 30px 5px rgb(122, 122, 111);
+    transition: 0.3s;
+}
+.reviews-manage-all-reviews-page-name {
+    background-color: rgb(49, 49, 49);
+    width: 70%;
+}
+.action-btn-delete-manage-all-reviews-page {
+    color: white;
+    background-color: rgba(42, 42, 42, 0.849);
+}
+.action-btn-delete-manage-all-reviews-page:hover {
+    color: white;
+    background-color: rgba(146, 34, 34, 0.849);
+}
+.delete-btn-manage-all-reviews-page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    transition: 0.5s !important;
+}
+.reviews-manage-all-reviews-page:hover .delete-btn-manage-all-reviews-page {
+    display: block;
+    transition: 0.5s !important;
+}
+.icon-color {
+    color: rgb(255, 157, 0);
+}
+.manage-all-reviews-content {
+    position: relative;
+}
+.comment-icon {
+    display: none;
+}
+@media screen and (min-width: 992px){
+    .comment-icon {
+        position: absolute;
+        display: block;
+        font-size: 400px;
+        right: 0;
+        opacity: 0.1;
+    }
+}

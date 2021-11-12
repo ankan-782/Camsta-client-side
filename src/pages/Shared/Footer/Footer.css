@@ -1,0 +1,72 @@
+p {
+    font-size: 15px;
+    margin: 0;
+}
+#big-footer {
+    background-color: rgb(34, 34, 34);
+}
+
+.font-color-footer {
+    color: rgb(204, 204, 179);
+}
+
+.footer-brand {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.form-control:focus{
+    border-color: black;
+    box-shadow: 0 0 0 0.25rem rgba(90, 90, 79, 0.5) !important
+}
+
+.footer-input-bg {
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(56, 60, 63);
+}
+
+.footer-submit-btn {
+    background-color: rgb(204, 204, 179);
+}
+
+.social-links a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid rgb(34, 34, 34);
+    transition: 0.5s ease;
+}
+
+.social-links a:hover {
+    border-bottom: 3px solid rgb(204, 204, 179);
+    transition: 0.5s ease;
+}
+
+.gallery-img-content{
+    /* width: 100%; */
+    position: relative;
+}
+.gallery-img-content div::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.gallery-img-content p {
+    font-size: 10px;
+    display: none;
+}
+
+.gallery-img-content div:hover p {
+    display: block;
+}
+
+.gallery-img-content div:hover::before {
+    opacity: 1;
+}

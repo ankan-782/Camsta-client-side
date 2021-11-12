@@ -1,0 +1,39 @@
+.my-orders-card-info {
+    background-color: rgb(255, 254, 242);
+    position: relative;
+    transition: 0.3s;
+}
+.my-orders-card-info:hover {
+    box-shadow: 0.5px 0.5px 15px 5px rgb(129, 128, 117);
+    transition: 0.3s;
+}
+.status-red-my-order-page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(146, 34, 34, 0.849);
+    color: white;
+    padding: 0 10px;
+}
+.status-green-my-order-page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(71, 139, 69, 0.849);
+    color: white;
+    padding: 0 10px;
+}
+.action-btn-delete-my-orders-page {
+    width: 80%;
+    color: white;
+    background-color: rgba(42, 42, 42, 0.849);
+}
+.action-btn-delete-my-orders-page:hover {
+    color: white;
+    background-color: rgba(146, 34, 34, 0.849);
+}
+.price {
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+}

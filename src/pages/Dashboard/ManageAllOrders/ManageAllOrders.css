@@ -1,0 +1,32 @@
+.action-btn-delete {
+    width: 90%;
+    margin-left: 10px !important;
+    color: white;
+    background-color: rgba(42, 42, 42, 0.849);
+}
+.action-btn-delete:hover {
+    color: white;
+    background-color: rgba(146, 34, 34, 0.849);
+}
+.action-btn-approve {
+    width: 90%;
+    margin-left: 10px !important;
+    color: white;
+    background-color: rgba(42, 42, 42, 0.849);
+}
+.action-btn-approve:hover {
+    color: white;
+    background-color: rgba(71, 139, 69, 0.849);
+}
+.status-red {
+    background-color: rgba(146, 34, 34, 0.849);
+    color: white;
+    /* border-radius: 20px; */
+    padding: 2px 10px;
+}
+.status-green {
+    background-color: rgba(71, 139, 69, 0.849);
+    color: white;
+    /* border-radius: 20px; */
+    padding: 2px 10px;
+}

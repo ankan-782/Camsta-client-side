@@ -1,0 +1,18 @@
+.make-admin-content-bg {
+    background-color: rgb(242, 245, 229);
+}
+.input-bg-make-admin-page {
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255) !important;
+}
+.user-icon {
+    font-size: 200px;
+    opacity: 0.1;
+}
+@media screen and (min-width: 992px){
+    .user-icon {
+        font-size: 500px;
+        opacity: 0.1;
+    }
+}

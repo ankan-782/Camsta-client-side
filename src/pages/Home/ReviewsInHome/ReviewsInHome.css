@@ -1,0 +1,46 @@
+.reviews-in-home-bg {
+    background-color: rgb(233, 232, 223);
+}
+.reviews-in-home-content{
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+.reviews-in-home-page-card {
+    position: relative;
+    background-color: rgb(252, 255, 240);
+    box-shadow: 0.5px 0.5px 10px rgb(117, 117, 107);
+    transition: 0.3s;
+}
+.reviews-in-home-page-card:hover {
+    box-shadow: 0.5px 0.5px 30px 5px rgb(122, 122, 111);
+    transition: 0.3s;
+}
+.reviews-in-home-page-card-name {
+    background-color: rgba(49, 49, 49, 0.781);
+    width: 70%;
+}
+.comment {
+    font-size: 100px !important;
+    position: absolute;
+    opacity: 0.15;
+    right: 5px;
+    top: 5px;
+}
+.icon-color {
+    color: rgb(255, 157, 0);
+}
+.plus-text-reviews-home {
+    color: rgb(63, 63, 63);
+    text-decoration: none;
+}
+.plus-icon-reviews-home{
+    font-size: 100px;
+    transition: 0.5s ease-in-out;
+}
+.plus-icon-reviews-home:hover {
+    border-radius: 20px;
+    background-color: rgb(251, 250, 241);
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 10px rgb(92, 87, 93);
+    transition: 0.3s ease-in-out;
+}

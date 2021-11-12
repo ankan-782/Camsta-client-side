@@ -1,0 +1,11 @@
+.not-found-bg{
+    background-color: rgb(233, 232, 223);
+}
+.not-found-img {
+    width: 35%;
+}
+@media screen and (min-width: 992px){
+    .error-content {
+        min-height: calc(100vh - 58px);
+    }
+}

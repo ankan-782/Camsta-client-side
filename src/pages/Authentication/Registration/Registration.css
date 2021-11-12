@@ -1,0 +1,44 @@
+.registration-bg {
+    background-color: rgb(233, 232, 223);
+}
+
+.settings-icon {
+    font-size: 200px;
+    opacity: 0.1;
+}
+.registration-content {
+    margin-top: 100px;
+}
+.registration-content-sizing {
+    background-color: rgb(252, 255, 240);
+}
+
+.account-switch:hover {
+    text-decoration: underline !important;
+}
+
+.form-control:focus{
+    border-color: black;
+    box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5) !important
+}
+
+.form-control::placeholder {
+    color: rgb(49, 49, 49) !important
+}
+
+.registration-input-bg {
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+
+@media screen and (min-width: 992px){
+    .registration-page {
+        min-height: calc(100vh - 58px);
+    }
+    .settings-icon {
+        font-size: 600px;
+        opacity: 0.1;
+    }
+}

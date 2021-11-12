@@ -1,0 +1,13 @@
+.product {
+    background-color: rgb(252, 255, 240);
+    box-shadow: 0.5px 0.5px 10px rgb(190, 172, 186);
+    transition: 0.3s;
+}
+.product:hover {
+    box-shadow: 0.5px 0.5px 30px 5px rgb(129, 128, 117);
+    transition: 0.3s;
+}
+.product-name {
+    background-color: rgb(49, 49, 49);
+    width: 70%;
+}

@@ -1,0 +1,26 @@
+.home-spinner-bg{
+    background-color: rgb(233, 232, 223);
+}
+.home-bg {
+    background-color: rgb(233, 232, 223);
+}
+.home-content {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+.plus-text {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+}
+.plus-icon{
+    
+    font-size: 100px;
+    transition: 0.5s ease-in-out;
+}
+.plus-icon:hover {
+    border-radius: 20px;
+    background-color: rgb(251, 241, 250);
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 10px rgb(225, 183, 238);
+    transition: 0.3s ease-in-out;
+}
