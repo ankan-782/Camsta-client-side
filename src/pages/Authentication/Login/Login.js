@@ -43,8 +43,8 @@ const Login = () => {
                         <div className="col-12 col-lg-6">
                             <div className="login-content-bg">
                                 <div className="d-flex justify-content-between mb-5">
-                                    <NavLink to="/register" className="text-decoration-none text-dark py-2 text-center w-100" activeStyle={{ backgroundColor: "rgb(207, 206, 199)" }}>Registration</NavLink>
                                     <NavLink to="/login" className="text-decoration-none text-dark text-center py-2 w-100" activeStyle={{ backgroundColor: "rgb(207, 206, 199)" }}>Log In</NavLink>
+                                    <NavLink to="/register" className="text-decoration-none text-dark py-2 text-center w-100" activeStyle={{ backgroundColor: "rgb(207, 206, 199)" }}>Registration</NavLink>
                                 </div>
                                 <form onSubmit={handleCustomLogin} className="px-3">
                                     <div className="mb-3">
