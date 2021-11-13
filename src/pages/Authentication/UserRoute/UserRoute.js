@@ -1,7 +1,7 @@
 import React from 'react';
-import './UserRoute.css';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
+import './UserRoute.css';
 
 const UserRoute = ({ children, ...rest }) => {
 
@@ -20,12 +20,13 @@ const UserRoute = ({ children, ...rest }) => {
             </>
         );
     }
+    console.log(admin);
     return (
         <Route
             {...rest}
-            render={({ location }) => (user?.email && (!admin)) ? children : <Redirect
+            render={({ location }) => (user?.email && !admin) ? children : <Redirect
                 to={{
-                    pathname: "/",
+                    pathname: "/dashboard",
                     state: { from: location }
                 }}
             ></Redirect>

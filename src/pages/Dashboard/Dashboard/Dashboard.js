@@ -31,14 +31,14 @@ const Dashboard = () => {
                     <div className="container-fluid p-lg-5 p-4">
                         <div className="row g-4">
                             <div className="col-12 col-md-4 col-lg-2">
-                                {(user.email && admin) && <div>
+                                {admin ? <div>
                                     <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/makeAdmin`}><i class="fas fa-check-circle me-2"></i>Make Admin</NavLink>
                                     <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/addNewProduct`}><i class="fas fa-plus me-2"></i>Add New Product</NavLink>
                                     <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/manageAllProducts`}><i class="fas fa-cog me-2"></i>Manage All Products</NavLink>
                                     <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/manageAllReviews`}><i class="fas fa-comment-alt me-2"></i>Manage All Reviews</NavLink>
                                     <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/manageAllOrders`}><i class="fas fa-tasks me-2"></i>Manage All Orders</NavLink>
-                                </div>}
-                                {(user.email && !admin) && <div>
+                                </div>
+                                : <div>
                                     <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/addNewReview`}><i class="fas fa-plus me-2"></i>Give Us Feedback</NavLink>
                                     <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/allReviews`}><i class="fas fa-comment-alt me-2"></i>See All Users Feedbacks</NavLink>
                                     <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/payment`}><i class="fas fa-money-check-alt me-2"></i>Payment</NavLink>
