@@ -119,7 +119,7 @@ const ProductPurchasePage = () => {
                                             <label htmlFor="exampleInputQuantity" className="form-label fs-6">Product Quantity</label>
                                             <input type="number" min="1" className="form-control input-bg-product-purchase-page py-3 rounded-0" id="exampleInputQuantity" placeholder="Quantity" {...register("quantity")} defaultValue="1" required />
                                         </div>
-                                        <button type="submit" class="mt-4 btn btn-outline-dark rounded-0">Place Order</button>
+                                        <button type="submit" class="mt-4 btn btn-outline-dark rounded-0" data-bs-dismiss="modal">Place Order</button>
                                     </form>
                                 </div>
                             </div>
