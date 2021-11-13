@@ -1,70 +1,22 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Camsta -- a action camera shop
+## Here is the Client side live site link: [Link](https://camsta-actioncam.web.app/)
+## Here is the Server side live link: [Link](https://fierce-badlands-75560.herokuapp.com/)
 
-## Available Scripts
+### Project features:
 
-In the project directory, you can run:
+* This is the action camera shop related website where customers can buy many action cameras through this website called Camsta.
 
-### `npm start`
+* This website has basically 4 routes. Home, Explore Products, Dashboard and login-registration route. In Dashboard route there has many routes. But these routes can be available basically two kinds of users. For normal users of this website, My Orders, Payments, Give us Feedbacks, See all Feedbacks routes are available. For Admin user, Add a Product, Manage All Products, Manage All Feedbacks, Make Admin routes are available. There has a header for navigating Home, Explore Products, Dashboard, login and Registration and there has a footer in the last part of Home section.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* In home page there has 4 sections except header and footer which are banner section & some products, about us section and feedbacks section. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Then, in products section all products will be available. Then products details will come when user clicks in the Button below. Then user see the details about the product and for purchasing that product user need to fill up the form.
 
-### `npm test`
+* Then the purchase information is shown to the My orders section and Manage all orders section which is in the dashboard route.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Admin can delete the orders from Manage All orders section and can approve the any user's orders by clicking the approve button. By approving the pending status will be cleared and set the status shipped from both section which are My orders section and Manage All orders. Lastly Admin can add a new product by going to the Dashboard > Add New product. Here Admin has to fill out the form for add a new product.
 
-### `npm run build`
+* Admin can make another user admin if the admin wants.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Admin can delete feedbacks and products if he wants.

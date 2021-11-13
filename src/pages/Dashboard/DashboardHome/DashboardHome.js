@@ -24,7 +24,7 @@ const DashboardHome = () => {
                         </div>
                         <div className="mb-1">
                             <i class="fas fa-angle-double-right me-2"></i>
-                            <span>Click on the button <b>Manage All Reviews</b> to manage all the feedbacks getting from the all the users of this website.</span>
+                            <span>Click on the button <b>Manage All Feedbacks</b> to manage all the reviews getting from the all the users of this website.</span>
                         </div>
                         <div className="mb-1">
                             <i class="fas fa-angle-double-right me-2"></i>
