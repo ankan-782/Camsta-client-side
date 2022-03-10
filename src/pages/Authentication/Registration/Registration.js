@@ -39,12 +39,11 @@ const Registration = () => {
     //registration method (sign up)
     const handleRegistration = (e) => {
         e.preventDefault();
-        // if (!/(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6}/.test(password)) {
-        //     setError('Password should be at least of 8 characters and must have one uppercase letter, one digits, one lowercase letter');
-        //     return;
-        // }
-        // this password validation doesn't match the admin password provided in task description.
-        // so for admin password use Admin0 
+        if (!/(?=.*[0-9])(?=.*[a-z]).{6}/.test(password)) {
+            setError('Password should be at least of 6 characters and must have one digits, one lowercase letter');
+            return;
+        }
+        //admin password use admin0
         processRegistration(email, password, name, history)
     }
 
