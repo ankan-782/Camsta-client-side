@@ -56,7 +56,7 @@ const Login = () => {
                                         <label htmlFor="inputPassword5" className="form-label fs-6">Password</label>
                                         <input type="password" onBlur={getPassword} id="inputPassword5" className="form-control login-input-bg py-3 rounded-0" aria-describedby="passwordHelpBlock" placeholder="Password" required />
                                         <div id="passwordHelpBlock" className="form-text text-dark">
-                                            Your password must be at least 6 characters long, contain at least one uppercase letter and at least a number.
+                                            Your password must be at least 6 characters long, contain at least one lowercase letter and at least a number.
                                         </div>
                                     </div>
                                     <div className="text-danger">{authError}</div>
