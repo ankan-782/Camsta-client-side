@@ -57,20 +57,20 @@ const ManageAllProducts = () => {
                                         <h6 className="border-bottom border-2 border-dark pb-1">Reason To Buy</h6>
                                         <p className="card-text text-black lh-base">{product?.reason}</p>
                                     </div>
-                                    <div class="card-footer d-flex justify-content-center align-items-center py-3">
+                                    <div className="card-footer d-flex justify-content-center align-items-center py-3">
                                         <div>
                                             <h4 className="m-0">${product?.price}</h4>
                                         </div>
                                     </div>
                                     <div className="delete-btn">
-                                        <button onClick={() => deleteBooking(product?._id)} className="btn rounded-0 action-btn-delete-manage-all-products-page"><h1><i class="fas fa-trash-alt fs-3 mx-3"></i></h1></button>
+                                        <button onClick={() => deleteBooking(product?._id)} className="btn rounded-0 action-btn-delete-manage-all-products-page"><h1><i className="fas fa-trash-alt fs-3 mx-3"></i></h1></button>
                                     </div>
                                 </div>
                             </div>
                         ))
                     }
                     {admin && <div className="d-flex justify-content-center align-items-center">
-                        <NavLink to="addNewProduct" className="plus-text-manage-all-products-page"><i class="far fa-plus-square plus-icon-manage-all-products-page"></i></NavLink>
+                        <NavLink to="addNewProduct" className="plus-text-manage-all-products-page"><i className="far fa-plus-square plus-icon-manage-all-products-page"></i></NavLink>
                     </div>}
                 </div>
             )}

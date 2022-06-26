@@ -11,7 +11,7 @@ const MyOrders = () => {
         fetch(`https://fierce-badlands-75560.herokuapp.com/specificUsersOrders?email=${user.email}`)
             .then(res => res.json())
             .then(data => setMyOrders(data));
-    }, []);
+    }, [user.email]);
 
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete?');
@@ -44,20 +44,20 @@ const MyOrders = () => {
                     {
                         myOrders.map(myOrder =>
                             <div className="col">
-                                <div class="card my-orders-card-info p-3 rounded-0 border-0">
-                                    <div class="row gx-2">
-                                        <div class="col-md-5">
+                                <div className="card my-orders-card-info p-3 rounded-0 border-0">
+                                    <div className="row gx-2">
+                                        <div className="col-md-5">
                                             <div className="d-flex flex-column justify-content-center align-items-center">
-                                                <img src={myOrder?.productImg} class="img-fluid" alt="..." />
+                                                <img src={myOrder?.productImg} className="img-fluid" alt="..." />
                                                 {myOrder?.status === 'pending' ? (<small className="status-red-my-order-page text-center">{myOrder?.status}</small>) : (<small className="status-green-my-order-page text-center">{myOrder?.status}</small>)}
                                             </div>
                                         </div>
-                                        <div class="col-md-7">
-                                            <div class="card-body text-center text-lg-start">
-                                                <h5 class="card-title">{myOrder?.productName}</h5>
+                                        <div className="col-md-7">
+                                            <div className="card-body text-center text-lg-start">
+                                                <h5 className="card-title">{myOrder?.productName}</h5>
                                                 <p className="mb-1">Price: <span className="price">$ {myOrder?.price}</span> per pc</p>
                                                 <p>Quantity: {myOrder?.quantity}pc</p>
-                                                <button className="btn rounded-0 action-btn-delete-my-orders-page mt-3" onClick={() => deleteBooking(myOrder._id)}><p><i class="fas fa-trash-alt me-2"></i>Cancel the order</p></button>
+                                                <button className="btn rounded-0 action-btn-delete-my-orders-page mt-3" onClick={() => deleteBooking(myOrder._id)}><p><i className="fas fa-trash-alt me-2"></i>Cancel the order</p></button>
                                             </div>
                                         </div>
                                     </div>

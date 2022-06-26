@@ -9,7 +9,7 @@ const Payment = () => {
                 <span className="visually-hidden">Loading...</span>
             </div>
             <div className="text-center">
-                <i class="fas fa-money-check-alt money-icon"></i>
+                <i className="fas fa-money-check-alt money-icon"></i>
             </div>
         </div>
     );

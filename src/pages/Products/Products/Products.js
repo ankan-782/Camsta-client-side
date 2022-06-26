@@ -31,7 +31,7 @@ const Products = () => {
                                 ></Product>)
                             }
                             {admin && <div className="d-flex justify-content-center align-items-center">
-                                <NavLink to="dashboard/addNewProduct" className="plus-text-products"><i class="far fa-plus-square plus-icon-products"></i></NavLink>
+                                <NavLink to="dashboard/addNewProduct" className="plus-text-products"><i className="far fa-plus-square plus-icon-products"></i></NavLink>
                             </div>}
                         </div>
                     </div>

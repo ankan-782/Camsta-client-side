@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="row g-5">
                     <div className="col-12 col-lg-4">
                         <div className="d-flex align-items-center mb-4">
-                            <i class="fas fa-camera fs-2 me-3"></i>
+                            <i className="fas fa-camera fs-2 me-3"></i>
                             <h5 className="footer-brand m-0 pt-2">C a m s t a</h5>
                         </div>
                         <p>For over 34 years, Camsta - Action Camera has dedicated itself to providing service, quality, and professionalism to the photography community. We may be small in size, but we make sure to fill every inch of our stores with quality photographic equipment. So, stop in for a visit! Our staff is here to assist you.</p>
@@ -37,10 +37,10 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="mt-5">
-                            <i class="fs-1 me-2 fab fa-cc-paypal"></i>
-                            <i class="fs-1 me-2 fab fa-cc-visa"></i>
-                            <i class="fs-1 me-2 fab fa-cc-mastercard"></i>
-                            <i class="fs-1 me-2 fab fa-cc-amex"></i>
+                            <i className="fs-1 me-2 fab fa-cc-paypal"></i>
+                            <i className="fs-1 me-2 fab fa-cc-visa"></i>
+                            <i className="fs-1 me-2 fab fa-cc-mastercard"></i>
+                            <i className="fs-1 me-2 fab fa-cc-amex"></i>
                         </div>
                     </div>
                     <div className="col-12 col-lg-2">

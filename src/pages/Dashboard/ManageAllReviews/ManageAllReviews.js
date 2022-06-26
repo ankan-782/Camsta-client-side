@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Rating from 'react-rating';
-import useAuth from '../../../hooks/useAuth';
 import './ManageAllReviews.css'
 
 const ManageAllReviews = () => {
-    const { admin } = useAuth();
     const [reviews, setReviews] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -34,7 +32,7 @@ const ManageAllReviews = () => {
 
     return (
         <div className="ms-lg-5 manage-all-reviews-content">
-            <i class="fas fa-comment-alt comment-icon"></i>
+            <i className="fas fa-comment-alt comment-icon"></i>
             <h5 className="mb-5 me-3 border-start border-3 ps-3 border-dark d-inline-block">Manage All Reviews</h5>
             {loading ? (
                 <div className="spinner-grow text-dark" style={{ width: "1.3rem", height: "1.3rem" }} role="status">
@@ -53,7 +51,7 @@ const ManageAllReviews = () => {
                                             <h6 className="card-text text-black lh-base">{review?.feedback}</h6>
                                         </div>
                                     </div>
-                                    <div class="card-footer d-flex justify-content-center align-items-center py-3">
+                                    <div className="card-footer d-flex justify-content-center align-items-center py-3">
                                         <Rating
                                             initialRating={review?.ratings}
                                             emptySymbol="far fa-star icon-color"
@@ -63,7 +61,7 @@ const ManageAllReviews = () => {
                                         </Rating>
                                     </div>
                                     <div className="delete-btn-manage-all-reviews-page">
-                                        <button onClick={() => deleteBooking(review?._id)} className="btn rounded-0 action-btn-delete-manage-all-reviews-page"><h5><i class="fas fa-trash-alt fs-6 mx-2"></i></h5></button>
+                                        <button onClick={() => deleteBooking(review?._id)} className="btn rounded-0 action-btn-delete-manage-all-reviews-page"><h5><i className="fas fa-trash-alt fs-6 mx-2"></i></h5></button>
                                     </div>
                                 </div>
                             </div>

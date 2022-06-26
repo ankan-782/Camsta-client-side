@@ -85,13 +85,13 @@ const ManageAllOrders = () => {
                                                 {order.status === 'pending' ? (<small className="status-red text-center">{order?.status}</small>) : (<small className="status-green text-center">{order?.status}</small>)}
                                             </td>
                                             <td>
-                                                <div class="dropdown">
-                                                    <button class="btn btn-outline-dark rounded-0 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div className="dropdown">
+                                                    <button className="btn btn-outline-dark rounded-0 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                                         Action
                                                     </button>
-                                                    <ul class="dropdown-menu rounded-0" style={{ width: '200px' }} aria-labelledby="dropdownMenuButton1">
-                                                        <li>{order.status === 'pending' && <button className="btn rounded-0 mb-2 action-btn-approve" onClick={() => updateBookingStatus(order._id)}><i class="fas fa-check-double fs-6 me-2"></i>Approve the order</button>}</li>
-                                                        <li><button className="btn rounded-0 action-btn-delete" onClick={() => deleteBooking(order._id)}><i class="fas fa-trash-alt fs-6 me-2"></i>Delete the order</button></li>
+                                                    <ul className="dropdown-menu rounded-0" style={{ width: '200px' }} aria-labelledby="dropdownMenuButton1">
+                                                        <li>{order.status === 'pending' && <button className="btn rounded-0 mb-2 action-btn-approve" onClick={() => updateBookingStatus(order._id)}><i className="fas fa-check-double fs-6 me-2"></i>Approve the order</button>}</li>
+                                                        <li><button className="btn rounded-0 action-btn-delete" onClick={() => deleteBooking(order._id)}><i className="fas fa-trash-alt fs-6 me-2"></i>Delete the order</button></li>
                                                     </ul>
                                                 </div>
                                             </td>

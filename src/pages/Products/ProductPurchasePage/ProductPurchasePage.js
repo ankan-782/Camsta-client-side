@@ -14,7 +14,7 @@ const ProductPurchasePage = () => {
         fetch(`https://fierce-badlands-75560.herokuapp.com/products/${specificProductID}`)
             .then(res => res.json())
             .then(data => setSpecificProduct(data));
-    }, [])
+    }, [specificProductID])
 
     const { _id, productName, productImg, short_description, price, description, specification, reason } = specificProduct;
 
@@ -84,14 +84,14 @@ const ProductPurchasePage = () => {
 
                     </div>
 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                            <div class="modal-content rounded-0 modal-bg">
-                                <div class="modal-header">
+                    <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                            <div className="modal-content rounded-0 modal-bg">
+                                <div className="modal-header">
                                     <h5 className="modal-title" id="exampleModalLabel">Order Information</h5>
-                                    <button type="button" class="btn-close rounded-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" className="btn-close rounded-0" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
+                                <div className="modal-body">
                                     <form onSubmit={handleSubmit(onSubmit)} className="mb-5">
                                         <div className="mb-3">
                                             <label htmlFor="exampleInputName" className="form-label fs-6">Full Name</label>
@@ -119,7 +119,7 @@ const ProductPurchasePage = () => {
                                             <label htmlFor="exampleInputQuantity" className="form-label fs-6">Product Quantity</label>
                                             <input type="number" min="1" className="form-control input-bg-product-purchase-page py-3 rounded-0" id="exampleInputQuantity" placeholder="Quantity" {...register("quantity")} defaultValue="1" required />
                                         </div>
-                                        <button type="submit" class="mt-4 btn btn-outline-dark rounded-0" data-bs-dismiss="modal">Place Order</button>
+                                        <button type="submit" className="mt-4 btn btn-outline-dark rounded-0" data-bs-dismiss="modal">Place Order</button>
                                     </form>
                                 </div>
                             </div>

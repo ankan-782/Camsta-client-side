@@ -36,7 +36,7 @@ const ReviewsInHome = () => {
                                                 <h6 className="card-text text-black lh-base">{review?.feedback}</h6>
                                             </div>
                                         </div>
-                                        <div class="card-footer d-flex justify-content-center align-items-center py-3">
+                                        <div className="card-footer d-flex justify-content-center align-items-center py-3">
                                             <Rating
                                                 initialRating={review?.ratings}
                                                 emptySymbol="far fa-star icon-color"
@@ -45,13 +45,13 @@ const ReviewsInHome = () => {
                                             >
                                             </Rating>
                                         </div>
-                                        <i class="fas fa-comment-alt comment"></i>
+                                        <i className="fas fa-comment-alt comment"></i>
                                     </div>
                                 </div>
                             ))
                         }
                         {!admin && <div className="d-flex justify-content-center align-items-center">
-                            <NavLink to="dashboard/addNewReview" className="plus-text-reviews-home"><i class="far fa-plus-square plus-icon-reviews-home"></i></NavLink>
+                            <NavLink to="dashboard/addNewReview" className="plus-text-reviews-home"><i className="far fa-plus-square plus-icon-reviews-home"></i></NavLink>
                         </div>}
                     </div>
                 )}

@@ -90,7 +90,7 @@ const Registration = () => {
                         </div>
                         <div className="col-12 col-lg-6">
                             <div className="d-flex justify-content-center">
-                                <i class="fas fa-tools settings-icon"></i>
+                                <i className="fas fa-tools settings-icon"></i>
                             </div>
                         </div>
                     </div>

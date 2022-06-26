@@ -20,11 +20,11 @@ const ProductsInHome = ({ product }) => {
                     <h6 className="border-bottom border-2 border-dark pb-1">Reason To Buy</h6>
                     <p className="card-text text-black lh-base">{reason}</p>
                 </div>
-                <div class="card-footer d-flex justify-content-between align-items-center py-3">
+                <div className="card-footer d-flex justify-content-between align-items-center py-3">
                     <div>
                         <h4 className="m-0">${price}</h4>
                     </div>
-                    <NavLink to={`/purchase/${_id}`}><button className="btn btn-outline-dark rounded-0"><i class="fas fa-chevron-right"></i></button></NavLink>
+                    <NavLink to={`/purchase/${_id}`}><button className="btn btn-outline-dark rounded-0"><i className="fas fa-chevron-right"></i></button></NavLink>
                 </div>
             </div>
         </div>

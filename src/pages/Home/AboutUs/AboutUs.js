@@ -58,28 +58,28 @@ const AboutUs = () => {
                             <div className="mt-5 row g-3">
                                 <div className="col-12 col-md-6 col-lg-3">
                                     <div className="text-center about-card h-100">
-                                        <i class="fas fa-handshake fs-2 mb-3"></i>
+                                        <i className="fas fa-handshake fs-2 mb-3"></i>
                                         <h6 className="fw-bold text-dark text-uppercase">Best Deals</h6>
                                         <p>Affordable</p>
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-3">
                                     <div className="text-center about-card h-100">
-                                        <i class="fas fa-globe fs-2 mb-3"></i>
+                                        <i className="fas fa-globe fs-2 mb-3"></i>
                                         <h6 className="fw-bold text-dark text-uppercase">Best Offers</h6>
                                         <p>Every Level</p>
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-3">
                                     <div className="text-center about-card h-100">
-                                        <i class="fas fa-camera fs-2 mb-3"></i>
+                                        <i className="fas fa-camera fs-2 mb-3"></i>
                                         <h6 className="fw-bold text-dark text-uppercase">Great Cameras</h6>
                                         <p>Affordable</p>
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-3">
                                     <div className="text-center about-card h-100">
-                                        <i class="fas fa-user-check fs-2 mb-3"></i>
+                                        <i className="fas fa-user-check fs-2 mb-3"></i>
                                         <h6 className="fw-bold text-dark text-uppercase">Fast Booking</h6>
                                         <p>All Products</p>
                                     </div>

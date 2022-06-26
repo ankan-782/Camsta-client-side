@@ -73,7 +73,7 @@ const Login = () => {
                         </div>
                         <div className="col-12 col-lg-6">
                             <div className="d-flex justify-content-center align-items-center">
-                                <i class="fas fa-user-lock lock-icon"></i>
+                                <i className="fas fa-user-lock lock-icon"></i>
                             </div>
                         </div>
                     </div>

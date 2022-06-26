@@ -63,7 +63,7 @@ const AddNewProduct = () => {
                 </div>
                 <div className="col-12 col-lg-6">
                     <div className="d-flex justify-content-center align-items-center">
-                        <i class="fas fa-database database-icon mt-5"></i>
+                        <i className="fas fa-database database-icon mt-5"></i>
                     </div>
                 </div>
             </div>

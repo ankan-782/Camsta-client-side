@@ -43,7 +43,7 @@ const MakeAdmin = () => {
                 </div>
                 <div className="col-12 col-lg-6">
                     <div className="d-flex justify-content-center align-items-center">
-                        <i class="fas fa-user-cog user-icon"></i>
+                        <i className="fas fa-user-cog user-icon"></i>
                     </div>
                 </div>
             </div>

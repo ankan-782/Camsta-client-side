@@ -57,7 +57,7 @@ const AddNewReview = () => {
                 </div>
                 <div className="col-12 col-lg-6">
                     <div className="d-flex justify-content-center align-items-center">
-                        <i class="fas fa-quote-right quote-icon"></i>
+                        <i className="fas fa-quote-right quote-icon"></i>
                     </div>
                 </div>
             </div>
