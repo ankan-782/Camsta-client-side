@@ -8,18 +8,19 @@ import PrivateRoute from './pages/Authentication/PrivateRoute/PrivateRoute';
 import ProductPurchasePage from './pages/Products/ProductPurchasePage/ProductPurchasePage';
 import Dashboard from './pages/Dashboard/Dashboard/Dashboard';
 
-import Header from './pages/Shared/Header/Header';
 import Footer from './pages/Shared/Footer/Footer';
 import Login from './pages/Authentication/Login/Login';
 import Registration from './pages/Authentication/Registration/Registration';
 import Notfound from './pages/Notfound/Notfound';
+
+import EveryPageScrollToTop from './WindowScroll/EveryPageScrollToTop/EveryPageScrollToTop';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
-          <Header></Header>
+          <EveryPageScrollToTop></EveryPageScrollToTop>
           <Switch>
             <Route exact path="/">
               <Home></Home>

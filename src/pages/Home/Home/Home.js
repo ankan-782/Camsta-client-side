@@ -6,6 +6,7 @@ import ReviewsInHome from '../ReviewsInHome/ReviewsInHome';
 import { NavLink } from 'react-router-dom';
 import useProductsInfo from '../../../hooks/useProductsInfo';
 import './Home.css';
+import HeaderForLandingPage from '../../Shared/HeaderForLandingPage/HeaderForLandingPage';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
 
     return (
         <div>
+            <HeaderForLandingPage></HeaderForLandingPage>
             <Banner></Banner>
             {loading ? (<div className="home-spinner-bg">
                 <div className="spinner-content d-flex justify-content-center align-items-center">

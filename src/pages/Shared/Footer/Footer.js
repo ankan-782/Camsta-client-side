@@ -73,13 +73,13 @@ const Footer = () => {
                                     <p>Follow us</p>
                                     <div className="d-flex fs-5 social-links">
                                         <a href="https://www.facebook.com/ankan.roy.50999" target="_blank" className="me-3">
-                                            <i className="fab fa-facebook font-color-footer"></i>
+                                            <i className="fab fa-facebook"></i>
                                         </a>
                                         <a href="https://www.instagram.com/ankan_782/" target="_blank" className="me-3">
-                                            <i className="fab fa-instagram font-color-footer"></i>
+                                            <i className="fab fa-instagram"></i>
                                         </a>
                                         <a href="https://twitter.com/AvijitAnkan" target="_blank" className="me-3">
-                                            <i className="fab fa-twitter font-color-footer"></i>
+                                            <i className="fab fa-twitter"></i>
                                         </a>
                                     </div>
                                 </div>

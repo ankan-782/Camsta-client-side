@@ -1,8 +1,5 @@
 import React from 'react';
 import './Banner.css';
-import img1 from '../../../images/Banner/img1.png'
-import img2 from '../../../images/Banner/img2.jpg'
-import img3 from '../../../images/Banner/img3.jpg'
 
 const Banner = () => {
     return (
@@ -14,33 +11,24 @@ const Banner = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <div className="banner-img-content">
-                        <div>
-                            <img src={img1} className="d-block w-100" alt="..." />
+                    <div className='slide1 min-vh-100'>
+                        <div className="carousel-caption-first d-none d-md-block">
+                            <p className="mb-5">Join with our family by <br /> buying from our shop<br /> <span className="banner-brand">CAMSTA</span></p>
                         </div>
-                    </div>
-                    <div className="carousel-caption-first d-none d-md-block">
-                        <p className="mb-5">Join with our family by <br /> buying from our shop<br /> <span className="banner-brand">CAMSTA</span></p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className="banner-img-content">
-                        <div>
-                            <img src={img2} className="d-block w-100" alt="..." />
+                    <div className='slide2 min-vh-100'>
+                        <div className="carousel-caption-second d-none d-md-block">
+                            <p className="mb-5">Get your choice and <br /> buy the best <br /> <span className="banner-brand">Action Cam only from Us</span></p>
                         </div>
-                    </div>
-                    <div className="carousel-caption-second d-none d-md-block">
-                        <p className="mb-5">Get your choice and <br /> buy the best <br /> <span className="banner-brand">Action Cam only from Us</span></p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className="banner-img-content">
-                        <div>
-                            <img src={img3} className="d-block w-100" alt="..." />
+                    <div className='slide3 min-vh-100'>
+                        <div className="carousel-caption-third d-none d-md-block">
+                            <p className="mb-5">Enjoy, Travel, Capture <br /> Any<br /><span className="banner-brand">With Camsta Products</span></p>
                         </div>
-                    </div>
-                    <div className="carousel-caption-third d-none d-md-block">
-                        <p className="mb-5">Enjoy, Travel, Capture <br /> Any<br /><span className="banner-brand">With Camsta Products</span></p>
                     </div>
                 </div>
             </div>

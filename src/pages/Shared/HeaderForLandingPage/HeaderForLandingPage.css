@@ -1,0 +1,54 @@
+.brand {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(195, 195, 163);
+}
+
+#navbar {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+#navbar .navbar-bg {
+    background-color: transparent;
+    transition: 0.3s ease background-color;
+}
+
+#navbar .navbar-bg.active {
+    background-color: rgb(34, 34, 34);
+}
+
+.font-color-header {
+    color: rgb(195, 195, 163);
+}
+
+.nav-link-header {
+    color: rgb(195, 195, 163) !important;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-text {
+    color: rgb(195, 195, 163) !important;
+}
+
+.authentication-btn {
+    border: 1px solid rgb(195, 195, 163) !important;
+    color: rgb(195, 195, 163) !important;
+}
+
+.authentication-btn:hover {
+    background-color: rgb(195, 195, 163) !important;
+    color: black !important;
+}
+
+.user-img {
+    border: 1px solid black;
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import useProductsInfo from '../../../hooks/useProductsInfo';
+import HeaderForRestOfPages from '../../Shared/HeaderForRestOfPages/HeaderForRestOfPages';
 import Product from '../Product/Product';
 import './Products.css';
 
@@ -13,6 +14,7 @@ const Products = () => {
 
     return (
         <>
+        <HeaderForRestOfPages></HeaderForRestOfPages>
             {loading ? (<div className="products-page-spinner-bg">
                 <div className="spinner-content d-flex justify-content-center align-items-center">
                     <div className="spinner-border text-dark" style={{ width: "5rem", height: "5rem" }} role="status">
