@@ -53,6 +53,11 @@ const HeaderForLandingPage = () => {
                                     {user?.email ? <div className="d-flex justify-content-between align-items-center">
                                         <button onClick={logOut} className="btn authentication-btn rounded-0 me-md-3 ms-3 order-last order-md-first"><p><i className="fas fa-sign-out-alt me-2"></i>Log Out</p></button>
                                         <div className="order-first">
+                                            {/* {
+                                                user?.email
+                                                    &&
+                                                    <NavLink to='/'>{user.email && user?.photoURL ? <img src={user?.photoURL} className="user-img" alt="" /> : <img src={avatar} title="User not logged in" alt="" className="user-img" />}</NavLink>
+                                            } */}
                                             <NavLink to="/">{user?.email && user?.photoURL ? <img src={user?.photoURL} className="user-img" alt="" /> : <img src={avatar} title="User not logged in" alt="" className="user-img" />}</NavLink>
                                             {user?.email && <span className="nav-text ms-3 text-uppercase">{user?.displayName}</span>}
                                         </div>

@@ -1,16 +1,17 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
-import './AdminRoute.css';
+import './LoginRoute.css';
 
-const AdminRoute = ({ children, ...rest }) => {
+const LoginRoute = ({ children, ...rest }) => {
+
     const { user, admin, isLoading } = useAuth();
 
     if (isLoading) {
         return (
             <>
-                <div className="admin-route-bg">
-                    <div className="admin-route-content d-flex justify-content-center align-items-center">
+                <div className="login-route-bg">
+                    <div className="login-route-content d-flex justify-content-center align-items-center">
                         <div className="spinner-border text-dark" style={{ width: "5rem", height: "5rem" }} role="status">
                             <span className="visually-hidden">Loading...</span>
                         </div>
@@ -23,9 +24,9 @@ const AdminRoute = ({ children, ...rest }) => {
     return (
         <Route
             {...rest}
-            render={({ location }) => (user?.email && admin) ? children : <Redirect
+            render={({ location }) => (!user?.email) ? children : <Redirect
                 to={{
-                    pathname: "/login",
+                    pathname: "/",
                     state: { from: location }
                 }}
             ></Redirect>
@@ -35,4 +36,4 @@ const AdminRoute = ({ children, ...rest }) => {
     );
 };
 
-export default AdminRoute;
+export default LoginRoute;
