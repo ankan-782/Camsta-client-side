@@ -41,7 +41,7 @@ const Login = () => {
             <HeaderForRestOfPages></HeaderForRestOfPages>
             <div id='login' className="login-bg text-dark d-flex justify-content-center align-items-center align-items-lg-start">
                 <div className="container">
-                    <div className="row g-5">
+                    <div className="row ">
                         <div className="col-12 col-lg-6">
                             <div className="login-content-bg">
                                 <div className="d-flex justify-content-between mb-5">

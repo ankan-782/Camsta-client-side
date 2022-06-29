@@ -53,7 +53,7 @@ const Registration = () => {
             <HeaderForRestOfPages></HeaderForRestOfPages>
             <div id='registration' className="registration-bg text-dark d-flex justify-content-center align-items-center align-items-lg-start">
                 <div className="container">
-                    <div className="row g-5">
+                    <div className="row">
                         <div className="col-12 col-lg-6">
                             <div className="registration-content-sizing">
                                 <div className="d-flex justify-content-between mb-5">
