@@ -1,3 +1,7 @@
+#registration {
+    padding: 50px 0px;
+}
+
 .registration-bg {
     background-color: rgb(233, 232, 223);
 }
@@ -6,9 +10,11 @@
     font-size: 200px;
     opacity: 0.1;
 }
+
 .registration-content {
     margin: 100px 0;
 }
+
 .registration-content-sizing {
     background-color: rgb(252, 255, 240);
 }
@@ -17,7 +23,7 @@
     text-decoration: underline !important;
 }
 
-.form-control:focus{
+.form-control:focus {
     border-color: black;
     box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5) !important
 }
@@ -33,17 +39,19 @@
 }
 
 
-@media screen and (min-width: 992px){
-    .registration-page {
-        min-height: calc(100vh - 58px);
+@media screen and (min-width: 992px) {
+    #registration {
+        min-height: 100vh;
+        padding-top: 50px;
     }
+
     .settings-icon {
         font-size: 500px;
         opacity: 0.1;
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
     .settings-icon {
         font-size: 600px;
         opacity: 0.1;

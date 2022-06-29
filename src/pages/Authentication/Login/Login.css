@@ -1,3 +1,6 @@
+#login{
+    padding: 50px 0px;
+}
 .login-bg {
     background-color: rgb(233, 232, 223);
 }
@@ -5,10 +8,6 @@
 .lock-icon {
     font-size: 200px;
     opacity: 0.1;
-}
-
-.login-content {
-    margin: 100px 0;
 }
 
 .login-content-bg {
@@ -36,8 +35,9 @@
 
 
 @media screen and (min-width: 992px){
-    .login-page {
-        min-height: calc(100vh - 58px);
+    #login {
+        min-height: 100vh;
+        padding-top: 50px;
     }
     .lock-icon {
         font-size: 400px;
