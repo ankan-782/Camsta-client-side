@@ -26,7 +26,7 @@ const ReviewsInHome = () => {
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-5">
                         {
                             reviews.map(review => (
-                                <div className="col">
+                                <div key={review._id} className="col">
                                     <div className="card reviews-in-home-page-card border-0 rounded-0 h-100">
                                         <div className="reviews-in-home-page-card-name my-4">
                                             <h5 className="card-title text-center m-0 py-2 text-white">{review?.name}</h5>

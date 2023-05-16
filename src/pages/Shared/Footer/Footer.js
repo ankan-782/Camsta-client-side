@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import useAuth from '../../../hooks/useAuth';
 import img1 from '../../../images/footerGallery/img1.jpg';
 import img2 from '../../../images/footerGallery/img2.jpg';
 import img3 from '../../../images/footerGallery/img3.jpg';
@@ -13,7 +12,6 @@ import img9 from '../../../images/footerGallery/img9.jpg';
 import './Footer.css';
 
 const Footer = () => {
-    const { user } = useAuth();
 
     const submit = () => {
         alert('Thank you for subscribing us. We will notify you for every update of this website.');
@@ -31,10 +29,10 @@ const Footer = () => {
                         <p>For over 34 years, Camsta - Action Camera has dedicated itself to providing service, quality, and professionalism to the photography community. We may be small in size, but we make sure to fill every inch of our stores with quality photographic equipment. So, stop in for a visit! Our staff is here to assist you.</p>
                         <div className="mt-4">
                             <h5>Receive Email Updates</h5>
-                            <div className="d-flex">
-                                <input type="text" placeholder="Your Email Address" className="form-control footer-input-bg rounded-0" value={user?.email} />
-                                <button className="btn footer-submit-btn btn-outline-dark rounded-0" onClick={submit}>SUBMIT</button>
-                            </div>
+                            <form onSubmit={() => alert("You will be updated regularly")} className="d-flex">
+                                <input type="text" placeholder="Your Email Address" className="form-control footer-input-bg rounded-0" />
+                                <button type="submit" className="btn footer-submit-btn btn-outline-dark rounded-0" onClick={submit}>SUBMIT</button>
+                            </form>
                         </div>
                         <div className="mt-5">
                             <i className="fs-1 me-2 fab fa-cc-paypal"></i>
@@ -72,13 +70,13 @@ const Footer = () => {
                                 <div className="mb-4">
                                     <p>Follow us</p>
                                     <div className="d-flex fs-5 social-links">
-                                        <a href="https://www.facebook.com/ankan.roy.50999" target="_blank" className="me-3">
+                                        <a href="https://www.facebook.com/ankan.roy.50999" target="_blank" rel="noreferrer" className="me-3">
                                             <i className="fab fa-facebook"></i>
                                         </a>
-                                        <a href="https://www.instagram.com/ankan_782/" target="_blank" className="me-3">
+                                        <a href="https://www.instagram.com/ankan_782/" target="_blank" rel="noreferrer" className="me-3">
                                             <i className="fab fa-instagram"></i>
                                         </a>
-                                        <a href="https://twitter.com/AvijitAnkan" target="_blank" className="me-3">
+                                        <a href="https://twitter.com/AvijitAnkan" target="_blank" rel="noreferrer" className="me-3">
                                             <i className="fab fa-twitter"></i>
                                         </a>
                                     </div>

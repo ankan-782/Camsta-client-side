@@ -62,15 +62,17 @@ const useFirebase = () => {
                     displayName: name
                 })
                     .then((result) => {
-                        setUser(result.user);
+                        // setUser(result.user);
                     })
                     .catch((error) => {
-                        setAuthError(error.message);
+                        // setAuthError(error.message);
                     });
                 history.replace('/');
             })
             .catch((error) => {
-                setAuthError(error.message);
+                if(error.code === 'auth/email-already-in-use'){
+                    setAuthError("This user is already exists");
+                }
             })
             .finally(() => setIsLoading(false));
     }
@@ -86,7 +88,11 @@ const useFirebase = () => {
                 setAuthError('');
             })
             .catch((error) => {
-                setAuthError(error.message);
+                if(error.code === 'auth/wrong-password'){
+                    setAuthError("You provided the wrong password");
+                } else if(error.code === 'auth/user-not-found') {
+                    setAuthError("The user is not signed up yet");
+                }
             })
             .finally(() => setIsLoading(false));
     }

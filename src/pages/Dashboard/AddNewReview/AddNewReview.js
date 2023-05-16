@@ -7,7 +7,7 @@ const AddNewReview = () => {
 
     const { user } = useAuth();
 
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
         fetch('https://camsta-server-side.onrender.com/reviews', {

@@ -19,7 +19,7 @@ const ProductPurchasePage = () => {
 
     const { _id, productName, productImg, short_description, price, description, specification, reason } = specificProduct;
 
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         data.productImg = productImg;
         data.bookingID = _id;

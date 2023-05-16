@@ -5,7 +5,7 @@ import './LoginRoute.css';
 
 const LoginRoute = ({ children, ...rest }) => {
 
-    const { user, admin, isLoading } = useAuth();
+    const { user, isLoading } = useAuth();
 
     if (isLoading) {
         return (
@@ -20,7 +20,7 @@ const LoginRoute = ({ children, ...rest }) => {
             </>
         );
     }
-    console.log(admin);
+    
     return (
         <Route
             {...rest}
