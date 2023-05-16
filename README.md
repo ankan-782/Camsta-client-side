@@ -1,7 +1,7 @@
 
 # Camsta -- a action camera shop
 ## Here is the Client side live site link: [Link](https://camsta-actioncam.web.app/)
-## Here is the Server side live link: [Link](https://fierce-badlands-75560.herokuapp.com/)
+## Here is the Server side live link: [Link](https://camsta-server-side.onrender.com/)
 
 ### Project features:
 

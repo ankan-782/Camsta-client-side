@@ -10,7 +10,7 @@ const AddNewReview = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        fetch('https://fierce-badlands-75560.herokuapp.com/reviews', {
+        fetch('https://camsta-server-side.onrender.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

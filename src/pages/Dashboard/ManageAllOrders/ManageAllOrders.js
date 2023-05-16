@@ -8,7 +8,7 @@ const ManageAllOrders = () => {
     const [updated, setUpdated] = useState(false);
 
     useEffect(() => {
-        fetch('https://fierce-badlands-75560.herokuapp.com/orders')
+        fetch('https://camsta-server-side.onrender.com/orders')
             .then(res => res.json())
             .then(data => setManageOrders(data));
     }, [updated]);
@@ -16,7 +16,7 @@ const ManageAllOrders = () => {
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete this order?');
         if (proceed) {
-            fetch(`https://fierce-badlands-75560.herokuapp.com/orders/${id}`, {
+            fetch(`https://camsta-server-side.onrender.com/orders/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())
@@ -31,7 +31,7 @@ const ManageAllOrders = () => {
     }
 
     const updateBookingStatus = (id) => {
-        fetch(`https://fierce-badlands-75560.herokuapp.com/orders/${id}`, {
+        fetch(`https://camsta-server-side.onrender.com/orders/${id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

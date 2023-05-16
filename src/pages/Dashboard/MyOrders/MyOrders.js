@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
 import notfoundImg from '../../../images/notFound/not.png';
 import './MyOrders.css';
@@ -8,7 +8,7 @@ const MyOrders = () => {
     const [myOrders, setMyOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`https://fierce-badlands-75560.herokuapp.com/specificUsersOrders?email=${user.email}`)
+        fetch(`https://camsta-server-side.onrender.com/specificUsersOrders?email=${user.email}`)
             .then(res => res.json())
             .then(data => setMyOrders(data));
     }, [user.email]);
@@ -16,7 +16,7 @@ const MyOrders = () => {
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            fetch(`https://fierce-badlands-75560.herokuapp.com/orders/${id}`, {
+            fetch(`https://camsta-server-side.onrender.com/orders/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())

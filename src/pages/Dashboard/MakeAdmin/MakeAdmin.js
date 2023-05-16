@@ -10,7 +10,7 @@ const MakeAdmin = () => {
 
     const handleAdminSubmit = e => {
         const user = { email };
-        fetch('https://fierce-badlands-75560.herokuapp.com/users/admin', {
+        fetch('https://camsta-server-side.onrender.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

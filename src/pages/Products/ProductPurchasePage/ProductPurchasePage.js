@@ -12,7 +12,7 @@ const ProductPurchasePage = () => {
     const { specificProductID } = useParams();
 
     useEffect(() => {
-        fetch(`https://fierce-badlands-75560.herokuapp.com/products/${specificProductID}`)
+        fetch(`https://camsta-server-side.onrender.com/products/${specificProductID}`)
             .then(res => res.json())
             .then(data => setSpecificProduct(data));
     }, [specificProductID])
@@ -27,7 +27,7 @@ const ProductPurchasePage = () => {
         data.price = price;
         data.status = 'pending';
 
-        fetch('https://fierce-badlands-75560.herokuapp.com/orders', {
+        fetch('https://camsta-server-side.onrender.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

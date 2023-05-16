@@ -7,7 +7,7 @@ const AddNewProduct = () => {
     const onSubmit = data => {
 
         console.log(data);
-        fetch('https://fierce-badlands-75560.herokuapp.com/products', {
+        fetch('https://camsta-server-side.onrender.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

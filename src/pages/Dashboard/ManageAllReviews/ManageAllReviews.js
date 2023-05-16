@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Rating from 'react-rating';
-import './ManageAllReviews.css'
+import './ManageAllReviews.css';
 
 const ManageAllReviews = () => {
     const [reviews, setReviews] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://fierce-badlands-75560.herokuapp.com/reviews')
+        fetch('https://camsta-server-side.onrender.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
             .finally(() => setLoading(false));
@@ -16,7 +16,7 @@ const ManageAllReviews = () => {
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete this review?');
         if (proceed) {
-            fetch(`https://fierce-badlands-75560.herokuapp.com/reviews/${id}`, {
+            fetch(`https://camsta-server-side.onrender.com/reviews/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())

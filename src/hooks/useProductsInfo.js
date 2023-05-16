@@ -5,7 +5,7 @@ const useProductsInfo = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://fierce-badlands-75560.herokuapp.com/products')
+        fetch('https://camsta-server-side.onrender.com/products')
             .then(res => res.json())
             .then(data => setProductsInfo(data))
             .finally(() => setLoading(false));

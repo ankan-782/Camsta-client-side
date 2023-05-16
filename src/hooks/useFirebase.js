@@ -1,5 +1,5 @@
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { useEffect, useState } from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import initializeAuthentication from '../pages/Authentication/Firebase/firebase.init';
 
 // calling the initial authentication as initAuthentication function to run the authentication related firebase code
@@ -107,7 +107,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('https://fierce-badlands-75560.herokuapp.com/users', {
+        fetch('https://camsta-server-side.onrender.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -118,7 +118,7 @@ const useFirebase = () => {
     }
 
     useEffect(() => {
-        fetch(`https://fierce-badlands-75560.herokuapp.com/users/${user.email}`)
+        fetch(`https://camsta-server-side.onrender.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin));
     }, [user.email])

@@ -8,7 +8,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://fierce-badlands-75560.herokuapp.com/reviews')
+        fetch('https://camsta-server-side.onrender.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

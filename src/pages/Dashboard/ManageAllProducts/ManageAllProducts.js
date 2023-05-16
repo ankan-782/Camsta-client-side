@@ -9,7 +9,7 @@ const ManageAllProducts = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://fierce-badlands-75560.herokuapp.com/products')
+        fetch('https://camsta-server-side.onrender.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
             .finally(() => setLoading(false));
@@ -18,7 +18,7 @@ const ManageAllProducts = () => {
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete this product?');
         if (proceed) {
-            fetch(`https://fierce-badlands-75560.herokuapp.com/products/${id}`, {
+            fetch(`https://camsta-server-side.onrender.com/products/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())
