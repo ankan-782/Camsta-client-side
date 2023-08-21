@@ -11,23 +11,29 @@ const Banner = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <div className='slide1 min-vh-100'>
-                        <div className="carousel-caption-first d-none d-md-block">
-                            <p className="mb-5">Join with our family by <br /> buying from our shop<br /> <span className="banner-brand">CAMSTA</span></p>
+                    <div className='slide1'>
+                        <div style={{ paddingBottom: "50px" }} className="container min-vh-100 d-flex align-items-end justify-content-center justify-content-sm-start">
+                            <div className="carousel-caption-first text-center text-sm-start">
+                                <p className="mb-5">Join with our family by <br /> buying from our shop<br /> <span className="banner-brand rounded-3">CAMSTA</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className='slide2 min-vh-100'>
-                        <div className="carousel-caption-second d-none d-md-block">
-                            <p className="mb-5">Get your choice and <br /> buy the best <br /> <span className="banner-brand">Action Cam only from Us</span></p>
+                    <div className='slide2'>
+                        <div style={{ paddingTop: "100px", paddingBottom: "50px" }} className="container min-vh-100 d-flex align-items-end align-items-sm-start justify-content-center justify-content-sm-start">
+                            <div className="carousel-caption-second text-center text-sm-start">
+                                <p className="mb-5">Get your choice and <br /> buy the best <br /> <span className="banner-brand rounded-3">Action Cam only from Us</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <div className='slide3 min-vh-100'>
-                        <div className="carousel-caption-third d-none d-md-block">
-                            <p className="mb-5">Enjoy, Travel, Capture <br /> Any<br /><span className="banner-brand">With Camsta Products</span></p>
+                    <div className='slide3'>
+                        <div style={{ paddingBottom: "50px" }} className="container min-vh-100 d-flex justify-content-center justify-content-sm-end align-items-end">
+                            <div className="carousel-caption-third text-center text-sm-start">
+                                <p className="mb-5">Enjoy, Travel, Capture <br /> Any<br /><span className="banner-brand rounded-3">With Camsta Products</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>

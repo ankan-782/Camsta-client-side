@@ -15,7 +15,7 @@ const Footer = () => {
 
     const submit = () => {
         alert('Thank you for subscribing us. We will notify you for every update of this website.');
-    }
+    };
 
     return (
         <div id="big-footer">
@@ -30,8 +30,8 @@ const Footer = () => {
                         <div className="mt-4">
                             <h5>Receive Email Updates</h5>
                             <form onSubmit={() => alert("You will be updated regularly")} className="d-flex">
-                                <input type="text" placeholder="Your Email Address" className="form-control footer-input-bg rounded-0" />
-                                <button type="submit" className="btn footer-submit-btn btn-outline-dark rounded-0" onClick={submit}>SUBMIT</button>
+                                <input type="text" placeholder="Your Email Address" className="form-control footer-input-bg rounded-3" />
+                                <button type="submit" className="btn footer-submit-btn btn-outline-dark rounded-3" onClick={submit}>SUBMIT</button>
                             </form>
                         </div>
                         <div className="mt-5">
@@ -89,31 +89,31 @@ const Footer = () => {
                             <h5 className="fw-bold mb-4">At a glance</h5>
                             <div className="row g-3">
                                 <div className="col-4">
-                                    <img src={img1} alt="" className="w-100" />
+                                    <img src={img1} alt="" className="w-100 rounded-3" />
                                 </div>
                                 <div className="col-4">
-                                    <img src={img2} alt="" className="w-100" />
+                                    <img src={img2} alt="" className="w-100 rounded-3" />
                                 </div>
                                 <div className="col-4">
-                                    <img src={img3} alt="" className="w-100" />
+                                    <img src={img3} alt="" className="w-100 rounded-3" />
                                 </div>
                                 <div className="col-4">
-                                    <img src={img4} alt="" className="w-100" />
+                                    <img src={img4} alt="" className="w-100 rounded-3" />
                                 </div>
                                 <div className="col-4">
-                                    <img src={img5} alt="" className="w-100" />
+                                    <img src={img5} alt="" className="w-100 rounded-3" />
                                 </div>
                                 <div className="col-4">
-                                    <img src={img6} alt="" className="w-100" />
+                                    <img src={img6} alt="" className="w-100 rounded-3" />
                                 </div>
                                 <div className="col-4">
-                                    <img src={img7} alt="" className="w-100" />
+                                    <img src={img7} alt="" className="w-100 rounded-3" />
                                 </div>
                                 <div className="col-4">
-                                    <img src={img8} alt="" className="w-100" />
+                                    <img src={img8} alt="" className="w-100 rounded-3" />
                                 </div>
                                 <div className="col-4">
-                                    <img src={img9} alt="" className="w-100" />
+                                    <img src={img9} alt="" className="w-100 rounded-3" />
                                 </div>
                             </div>
                         </div>

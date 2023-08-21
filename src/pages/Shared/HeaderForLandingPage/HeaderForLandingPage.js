@@ -16,23 +16,23 @@ const HeaderForLandingPage = () => {
         else {
             setHeaderBg(false);
         }
-    }
+    };
     useEffect(() => {
         window.addEventListener('scroll', handleHeaderScroll);
-    }, [headerBg])
+    }, [headerBg]);
 
     return (
         <nav id='navbar'>
             <div className={headerBg ? 'navbar-bg active' : 'navbar-bg'}>
                 <div className="navbar navbar-expand-lg navbar-dark">
-                    <div className="container-fluid px-lg-5">
+                    <div className="container px-lg-0">
                         <NavLink className="navbar-brand" to="/home">
                             <div className="d-flex justify-content-between align-items-center">
                                 <i className="fas fa-camera fs-2 me-1 font-color-header"></i>
                                 <h5 className="ms-1 text-uppercase brand m-0 pt-1">C a m s t a</h5>
                             </div>
                         </NavLink>
-                        <button className="navbar-toggler rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button className="navbar-toggler rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,7 +51,7 @@ const HeaderForLandingPage = () => {
                             <div className="ms-auto d-flex align-items-center">
                                 <div className="nav-item ms-lg-4">
                                     {user?.email ? <div className="d-flex justify-content-between align-items-center">
-                                        <button onClick={logOut} className="btn authentication-btn rounded-0 me-md-3 ms-3 order-last order-md-first"><p><i className="fas fa-sign-out-alt me-2"></i>Log Out</p></button>
+                                        <button onClick={logOut} className="btn authentication-btn rounded-3 me-md-3 ms-3 order-last order-md-first"><p><i className="fas fa-sign-out-alt me-2"></i>Log Out</p></button>
                                         <div className="order-first">
                                             {/* {
                                                 user?.email
@@ -63,8 +63,8 @@ const HeaderForLandingPage = () => {
                                         </div>
                                     </div>
                                         : <div>
-                                            <NavLink to="/login"><button className="btn authentication-btn rounded-0 me-3"><p><i className="fas fa-sign-in-alt me-2"></i>Log In</p></button></NavLink>
-                                            <NavLink to="/register"><button className="btn authentication-btn rounded-0"><p><i className="fas fa-sign-in-alt me-2"></i>Register</p></button></NavLink>
+                                            <NavLink to="/login"><button className="btn authentication-btn rounded-3 me-3"><p><i className="fas fa-sign-in-alt me-2"></i>Log In</p></button></NavLink>
+                                            <NavLink to="/register"><button className="btn authentication-btn rounded-3"><p><i className="fas fa-sign-in-alt me-2"></i>Register</p></button></NavLink>
                                         </div>}
                                 </div>
                             </div>

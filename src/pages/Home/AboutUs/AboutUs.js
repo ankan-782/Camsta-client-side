@@ -9,7 +9,7 @@ const AboutUs = () => {
     return (
         <div className="about-us-bg text-dark">
             <div className="about-us-content d-flex justify-content-center align-items-center">
-                <div className="container-fluid p-lg-5 p-4">
+                <div className="container px-lg-0">
                     <div className="row g-5">
                         <div className="col-12 col-xl-6">
                             <div className="row g-3">
@@ -17,7 +17,7 @@ const AboutUs = () => {
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">Best Deals</h3>
-                                            <img src={img1} alt="" className="img-fluid border border-2 p-2 border-dark" />
+                                            <img src={img1} alt="" className="img-fluid border border-2 p-2 border-dark rounded-3" />
                                         </div>
                                     </div>
                                 </div>
@@ -25,7 +25,7 @@ const AboutUs = () => {
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">Best Offers</h3>
-                                            <img src={img2} alt="" className="img-fluid border border-2 p-2 border-dark" />
+                                            <img src={img2} alt="" className="img-fluid border border-2 p-2 border-dark rounded-3" />
                                         </div>
                                     </div>
                                 </div>
@@ -33,7 +33,7 @@ const AboutUs = () => {
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">Great Cameras</h3>
-                                            <img src={img3} alt="" className="img-fluid border border-2 p-2 border-dark" />
+                                            <img src={img3} alt="" className="img-fluid border border-2 p-2 border-dark rounded-3" />
                                         </div>
                                     </div>
                                 </div>
@@ -41,7 +41,7 @@ const AboutUs = () => {
                                     <div className="img-content">
                                         <div className="d-flex justify-content-center align-items-center">
                                             <h3 className="position-absolute text-white">Fast Booking</h3>
-                                            <img src={img4} alt="" className="img-fluid border border-2 p-2 border-dark" />
+                                            <img src={img4} alt="" className="img-fluid border border-2 p-2 border-dark rounded-3" />
                                         </div>
                                     </div>
                                 </div>
@@ -57,28 +57,28 @@ const AboutUs = () => {
                                 We’re more than a retail action camera store, we are a community-first business. We proudly offer classes, workshops, a rental program, film processing, and more!! Whether you're a pro, hobbyist, or complete beginner, we are here to help you get the most out of your gear.</p>
                             <div className="mt-5 row g-3">
                                 <div className="col-12 col-md-6 col-lg-3">
-                                    <div className="text-center about-card h-100">
+                                    <div className="text-center about-card h-100 rounded-3">
                                         <i className="fas fa-handshake fs-2 mb-3"></i>
                                         <h6 className="fw-bold text-dark text-uppercase">Best Deals</h6>
                                         <p>Affordable</p>
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-3">
-                                    <div className="text-center about-card h-100">
+                                    <div className="text-center about-card h-100 rounded-3">
                                         <i className="fas fa-globe fs-2 mb-3"></i>
                                         <h6 className="fw-bold text-dark text-uppercase">Best Offers</h6>
                                         <p>Every Level</p>
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-3">
-                                    <div className="text-center about-card h-100">
+                                    <div className="text-center about-card h-100 rounded-3">
                                         <i className="fas fa-camera fs-2 mb-3"></i>
                                         <h6 className="fw-bold text-dark text-uppercase">Great Cameras</h6>
                                         <p>Affordable</p>
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-6 col-lg-3">
-                                    <div className="text-center about-card h-100">
+                                    <div className="text-center about-card h-100 rounded-3">
                                         <i className="fas fa-user-check fs-2 mb-3"></i>
                                         <h6 className="fw-bold text-dark text-uppercase">Fast Booking</h6>
                                         <p>All Products</p>

@@ -13,7 +13,7 @@ const ManageAllProducts = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
             .finally(() => setLoading(false));
-    }, [])
+    }, []);
 
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete this product?');
@@ -30,7 +30,7 @@ const ManageAllProducts = () => {
                     }
                 });
         }
-    }
+    };
 
     return (
         <div className="ms-lg-5">
@@ -39,13 +39,13 @@ const ManageAllProducts = () => {
                 <div className="spinner-grow text-dark" style={{ width: "1.3rem", height: "1.3rem" }} role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>) : (
-                <div className="row row-cols-1 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-5">
+                <div className="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-5">
                     {
                         products.map(product => (
                             <div className="col">
-                                <div className="card product-manage-all-products-page border-0 rounded-0 h-100">
-                                    <img src={product?.productImg} className="card-img-top rounded-0" alt="..." />
-                                    <div className="product-manage-all-products-page-name">
+                                <div className="card product-manage-all-products-page border-0 rounded-3 h-100">
+                                    <img src={product?.productImg} className="card-img-top rounded-3" alt="..." />
+                                    <div className="product-manage-all-products-page-name rounded-end">
                                         <h5 className="card-title text-center m-0 py-2 text-white">{product?.productName}</h5>
                                     </div>
                                     <div className="card-body">
@@ -63,7 +63,7 @@ const ManageAllProducts = () => {
                                         </div>
                                     </div>
                                     <div className="delete-btn">
-                                        <button onClick={() => deleteBooking(product?._id)} className="btn rounded-0 action-btn-delete-manage-all-products-page"><h1><i className="fas fa-trash-alt fs-3 mx-3"></i></h1></button>
+                                        <button onClick={() => deleteBooking(product?._id)} className="btn rounded-3 action-btn-delete-manage-all-products-page"><h1><i className="fas fa-trash-alt fs-3 mx-3"></i></h1></button>
                                     </div>
                                 </div>
                             </div>

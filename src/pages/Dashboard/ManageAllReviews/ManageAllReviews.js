@@ -11,7 +11,7 @@ const ManageAllReviews = () => {
             .then(res => res.json())
             .then(data => setReviews(data))
             .finally(() => setLoading(false));
-    }, [])
+    }, []);
 
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete this review?');
@@ -28,7 +28,7 @@ const ManageAllReviews = () => {
                     }
                 });
         }
-    }
+    };
 
     return (
         <div className="ms-lg-5 manage-all-reviews-content">
@@ -38,12 +38,12 @@ const ManageAllReviews = () => {
                 <div className="spinner-grow text-dark" style={{ width: "1.3rem", height: "1.3rem" }} role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>) : (
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-5">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5">
                     {
                         reviews.map(review => (
                             <div className="col">
-                                <div className="card reviews-manage-all-reviews-page border-0 rounded-0 h-100">
-                                    <div className="reviews-manage-all-reviews-page-name my-4">
+                                <div className="card reviews-manage-all-reviews-page border-0 rounded-3 h-100">
+                                    <div className="reviews-manage-all-reviews-page-name my-4 rounded-end">
                                         <h5 className="card-title text-center m-0 py-2 text-white">{review?.name}</h5>
                                     </div>
                                     <div className="card-body">
@@ -61,7 +61,7 @@ const ManageAllReviews = () => {
                                         </Rating>
                                     </div>
                                     <div className="delete-btn-manage-all-reviews-page">
-                                        <button onClick={() => deleteBooking(review?._id)} className="btn rounded-0 action-btn-delete-manage-all-reviews-page"><h5><i className="fas fa-trash-alt fs-6 mx-2"></i></h5></button>
+                                        <button onClick={() => deleteBooking(review?._id)} className="btn rounded-3 action-btn-delete-manage-all-reviews-page"><h5><i className="fas fa-trash-alt fs-6 mx-2"></i></h5></button>
                                     </div>
                                 </div>
                             </div>

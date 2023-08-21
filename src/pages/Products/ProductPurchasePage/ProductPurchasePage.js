@@ -15,7 +15,7 @@ const ProductPurchasePage = () => {
         fetch(`https://camsta-server-side.onrender.com/products/${specificProductID}`)
             .then(res => res.json())
             .then(data => setSpecificProduct(data));
-    }, [specificProductID])
+    }, [specificProductID]);
 
     const { _id, productName, productImg, short_description, price, description, specification, reason } = specificProduct;
 
@@ -40,8 +40,8 @@ const ProductPurchasePage = () => {
                     alert(`order placed successfully.`);
                     reset();
                 }
-            })
-    }
+            });
+    };
     return (
         <>
             <HeaderForRestOfPages></HeaderForRestOfPages>
@@ -57,7 +57,7 @@ const ProductPurchasePage = () => {
                                 </div>
                             </div>
                             <div className="col-12 col-lg-7">
-                                <div className="mb-3 product-purchase-page-product-name py-4">
+                                <div className="mb-3 product-purchase-page-product-name py-4 rounded-3">
                                     <h4 className="card-title text-center fw-bold m-0 text-white">{productName}</h4>
                                 </div>
                                 <div className="mb-4">
@@ -76,7 +76,7 @@ const ProductPurchasePage = () => {
                                     <h6 className="border-bottom border-2 border-dark pb-1">Reason To Buy</h6>
                                     <p className="card-text text-black lh-base">{reason}</p>
                                 </div>
-                                {!admin && <button type="button" className="btn btn-outline-dark rounded-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Place Order to Purchase this</button>}
+                                {!admin && <button type="button" className="btn btn-outline-dark rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Place Order to Purchase this</button>}
                             </div>
 
 
@@ -89,40 +89,40 @@ const ProductPurchasePage = () => {
 
                         <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                                <div className="modal-content rounded-0 modal-bg">
+                                <div className="modal-content rounded-3 modal-bg">
                                     <div className="modal-header">
                                         <h5 className="modal-title" id="exampleModalLabel">Order Information</h5>
-                                        <button type="button" className="btn-close rounded-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" className="btn-close rounded-3" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
                                         <form onSubmit={handleSubmit(onSubmit)} className="mb-5">
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputName" className="form-label fs-6">Full Name</label>
-                                                <input type="text" className="form-control input-bg-product-purchase-page py-3 rounded-0" id="exampleInputName" placeholder="Name" defaultValue={user?.displayName} {...register("name")} required readOnly />
+                                                <input type="text" className="form-control input-bg-product-purchase-page py-3 rounded-3" id="exampleInputName" placeholder="Name" defaultValue={user?.displayName} {...register("name")} required readOnly />
                                             </div>
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputEmail" className="form-label fs-6">Email address</label>
-                                                <input type="email" className="form-control input-bg-product-purchase-page py-3 rounded-0" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="abc@pqr.xyz" defaultValue={user?.email} {...register("email")} required readOnly />
+                                                <input type="email" className="form-control input-bg-product-purchase-page py-3 rounded-3" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="abc@pqr.xyz" defaultValue={user?.email} {...register("email")} required readOnly />
                                             </div>
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputPhNo" className="form-label fs-6">Phone Number</label>
-                                                <input type="text" className="form-control input-bg-product-purchase-page py-3 rounded-0" id="exampleInputPhNo" placeholder="01XXXXXXXXX" {...register("phoneNo")} required />
+                                                <input type="text" className="form-control input-bg-product-purchase-page py-3 rounded-3" id="exampleInputPhNo" placeholder="01XXXXXXXXX" {...register("phoneNo")} required />
                                             </div>
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputAddress" className="form-label fs-6">Address</label>
-                                                <textarea className="form-control input-bg-product-purchase-page py-3 rounded-0"
+                                                <textarea className="form-control input-bg-product-purchase-page py-3 rounded-3"
                                                     placeholder="Your Full Address" id="exampleInputAddress" cols="20" rows="3" {...register("address")}>
                                                 </textarea>
                                             </div>
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputCity" className="form-label fs-6">City</label>
-                                                <input type="text" className="form-control input-bg-product-purchase-page py-3 rounded-0" id="exampleInputCity" placeholder="City" {...register("city")} required />
+                                                <input type="text" className="form-control input-bg-product-purchase-page py-3 rounded-3" id="exampleInputCity" placeholder="City" {...register("city")} required />
                                             </div>
                                             <div className="mb-3">
                                                 <label htmlFor="exampleInputQuantity" className="form-label fs-6">Product Quantity</label>
-                                                <input type="number" min="1" className="form-control input-bg-product-purchase-page py-3 rounded-0" id="exampleInputQuantity" placeholder="Quantity" {...register("quantity")} defaultValue="1" required />
+                                                <input type="number" min="1" className="form-control input-bg-product-purchase-page py-3 rounded-3" id="exampleInputQuantity" placeholder="Quantity" {...register("quantity")} defaultValue="1" required />
                                             </div>
-                                            <button type="submit" className="mt-4 btn btn-outline-dark rounded-0" data-bs-dismiss="modal">Place Order</button>
+                                            <button type="submit" className="mt-4 btn btn-outline-dark rounded-3" data-bs-dismiss="modal">Place Order</button>
                                         </form>
                                     </div>
                                 </div>

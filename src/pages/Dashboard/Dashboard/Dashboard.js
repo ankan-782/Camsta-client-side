@@ -1,24 +1,23 @@
 import React from 'react';
-import './Dashboard.css';
-import { Route, Switch, useRouteMatch } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Route, Switch, useRouteMatch } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import './Dashboard.css';
 
 import DashboardHome from '../DashboardHome/DashboardHome';
 
 import AdminRoute from '../../Authentication/AdminRoute/AdminRoute';
+import AddNewProduct from '../AddNewProduct/AddNewProduct';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import ManageAllProducts from '../ManageAllProducts/ManageAllProducts';
 import ManageAllReviews from '../ManageAllReviews/ManageAllReviews';
-import AddNewProduct from '../AddNewProduct/AddNewProduct';
-import MakeAdmin from '../MakeAdmin/MakeAdmin';
 
 import UserRoute from '../../Authentication/UserRoute/UserRoute';
+import HeaderForRestOfPages from '../../Shared/HeaderForRestOfPages/HeaderForRestOfPages';
 import AddNewReview from '../AddNewReview/AddNewReview';
-import Reviews from '../Reviews/Reviews';
 import MyOrders from '../MyOrders/MyOrders';
 import Payment from '../Payment/Payment';
-import HeaderForRestOfPages from '../../Shared/HeaderForRestOfPages/HeaderForRestOfPages';
+import Reviews from '../Reviews/Reviews';
 
 const Dashboard = () => {
 
@@ -31,7 +30,7 @@ const Dashboard = () => {
             <div>
                 <div className="dashboard-bg text-dark">
                     <div className="dashboard-content d-flex justify-content-center align-items-start">
-                        <div className="container-fluid p-lg-5 p-4">
+                        <div className="container px-lg-0 p-5">
                             <div className="row g-4">
                                 <div className="col-12 col-md-4 col-lg-2">
                                     {admin ? <div>
@@ -47,7 +46,7 @@ const Dashboard = () => {
                                             <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/payment`}><i className="fas fa-money-check-alt me-2"></i>Payment</NavLink>
                                             <NavLink activeStyle={{ fontWeight: "bold" }} className="nav-link-dashboard border-bottom-design-dashboard d-block mb-4" to={`${url}/myOrders`}><i className="fas fa-shopping-basket me-2"></i>My Orders</NavLink>
                                         </div>}
-                                    {user?.email && <p onClick={logOut} className="nav-link-dashboard border-bottom-design-dashboard d-block pointer rounded-0"><i className="fas fa-sign-out-alt me-2"></i>Log Out</p>}
+                                    {user?.email && <p onClick={logOut} className="nav-link-dashboard border-bottom-design-dashboard d-block pointer rounded-3"><i className="fas fa-sign-out-alt me-2"></i>Log Out</p>}
                                 </div>
                                 <div className="col-12 col-md-8 col-lg-10">
                                     <Switch>

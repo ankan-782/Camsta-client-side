@@ -28,7 +28,7 @@ const ManageAllOrders = () => {
                     }
                 });
         }
-    }
+    };
 
     const updateBookingStatus = (id) => {
         fetch(`https://camsta-server-side.onrender.com/orders/${id}`, {
@@ -41,9 +41,9 @@ const ManageAllOrders = () => {
             .then(res => res.json())
             .then(data => {
                 setUpdated(!updated);
-            })
+            });
 
-    }
+    };
     return (
         <div>
             <div className="ms-lg-5">
@@ -86,12 +86,12 @@ const ManageAllOrders = () => {
                                             </td>
                                             <td>
                                                 <div className="dropdown">
-                                                    <button className="btn btn-outline-dark rounded-0 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <button className="btn btn-outline-dark rounded-3 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                                         Action
                                                     </button>
-                                                    <ul className="dropdown-menu rounded-0" style={{ width: '200px' }} aria-labelledby="dropdownMenuButton1">
-                                                        <li>{order.status === 'pending' && <button className="btn rounded-0 mb-2 action-btn-approve" onClick={() => updateBookingStatus(order._id)}><i className="fas fa-check-double fs-6 me-2"></i>Approve the order</button>}</li>
-                                                        <li><button className="btn rounded-0 action-btn-delete" onClick={() => deleteBooking(order._id)}><i className="fas fa-trash-alt fs-6 me-2"></i>Delete the order</button></li>
+                                                    <ul className="dropdown-menu rounded-3" style={{ width: '200px' }} aria-labelledby="dropdownMenuButton1">
+                                                        <li>{order.status === 'pending' && <button className="btn rounded-3 mb-2 action-btn-approve" onClick={() => updateBookingStatus(order._id)}><i className="fas fa-check-double fs-6 me-2"></i>Approve the order</button>}</li>
+                                                        <li><button className="btn rounded-3 action-btn-delete" onClick={() => deleteBooking(order._id)}><i className="fas fa-trash-alt fs-6 me-2"></i>Delete the order</button></li>
                                                     </ul>
                                                 </div>
                                             </td>

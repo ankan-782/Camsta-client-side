@@ -1,12 +1,12 @@
 import React from 'react';
-import Banner from '../Banner/Banner';
-import AboutUs from '../AboutUs/AboutUs';
-import ProductsInHome from '../ProductsInHome/ProductsInHome';
-import ReviewsInHome from '../ReviewsInHome/ReviewsInHome';
 import { NavLink } from 'react-router-dom';
 import useProductsInfo from '../../../hooks/useProductsInfo';
-import './Home.css';
 import HeaderForLandingPage from '../../Shared/HeaderForLandingPage/HeaderForLandingPage';
+import AboutUs from '../AboutUs/AboutUs';
+import Banner from '../Banner/Banner';
+import ProductsInHome from '../ProductsInHome/ProductsInHome';
+import ReviewsInHome from '../ReviewsInHome/ReviewsInHome';
+import './Home.css';
 
 
 const Home = () => {
@@ -37,7 +37,7 @@ const Home = () => {
                             }
                         </div>
                         <div className="d-flex justify-content-center align-items-center">
-                            <NavLink className="btn btn-outline-dark rounded-0 my-5" to="/products">View all products in Explore Products section</NavLink>
+                            <NavLink className="btn btn-outline-dark rounded-3 my-5" to="/products">View all products in Explore Products section</NavLink>
                         </div>
                     </div>
                 </div>

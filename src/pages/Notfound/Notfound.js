@@ -1,7 +1,7 @@
 import React from 'react';
-import './Notfound.css'
-import notFoundGif from '../../images/notFound/404.gif';
 import { NavLink } from 'react-router-dom';
+import notFoundGif from '../../images/notFound/404.gif';
+import './Notfound.css';
 
 const Notfound = () => {
     return (
@@ -9,7 +9,7 @@ const Notfound = () => {
             <img src={notFoundGif} alt="" className="not-found-img" />
             <h3 className="mt-5">Error 404!</h3>
             <small className="text-center">The page you are looking for is not found ! Go back to Home</small>
-            <NavLink to="/"><button className="btn btn-outline-dark rounded-0 mt-4"><i className="fas fa-home fs-3"></i></button></NavLink>
+            <NavLink to="/"><button className="btn btn-outline-dark rounded-3 mt-4"><i className="fas fa-home fs-3"></i></button></NavLink>
         </div>
     );
 };

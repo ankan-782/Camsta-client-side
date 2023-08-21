@@ -10,8 +10,8 @@ const Reviews = () => {
     useEffect(() => {
         fetch('https://camsta-server-side.onrender.com/reviews')
             .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [])
+            .then(data => setReviews(data));
+    }, []);
     return (
         <div className="ms-lg-5">
             <h5 className="mb-5 border-start border-3 ps-3 border-dark">User Feedbacks</h5>
@@ -23,12 +23,12 @@ const Reviews = () => {
                     </div>
                 )
                 :
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-5">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5">
                     {
                         reviews.map(review => (
                             <div className="col">
-                                <div className="card reviews-page-card border-0 rounded-0 h-100">
-                                    <div className="reviews-page-card-name my-4">
+                                <div className="card reviews-page-card border-0 rounded-3 h-100">
+                                    <div className="reviews-page-card-name my-4 rounded-end">
                                         <h5 className="card-title text-center m-0 py-2 text-white">{review?.name}</h5>
                                     </div>
                                     <div className="card-body">

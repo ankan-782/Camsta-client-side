@@ -28,7 +28,7 @@ const MyOrders = () => {
                     }
                 });
         }
-    }
+    };
 
     return (
         <div className="ms-lg-5">
@@ -44,7 +44,7 @@ const MyOrders = () => {
                     {
                         myOrders.map(myOrder =>
                             <div className="col">
-                                <div className="card my-orders-card-info p-3 rounded-0 border-0">
+                                <div className="card my-orders-card-info p-3 rounded-3 overflow-hidden border-0">
                                     <div className="row gx-2">
                                         <div className="col-md-5">
                                             <div className="d-flex flex-column justify-content-center align-items-center">
@@ -57,7 +57,7 @@ const MyOrders = () => {
                                                 <h5 className="card-title">{myOrder?.productName}</h5>
                                                 <p className="mb-1">Price: <span className="price">$ {myOrder?.price}</span> per pc</p>
                                                 <p>Quantity: {myOrder?.quantity}pc</p>
-                                                <button className="btn rounded-0 action-btn-delete-my-orders-page mt-3" onClick={() => deleteBooking(myOrder._id)}><p><i className="fas fa-trash-alt me-2"></i>Cancel the order</p></button>
+                                                <button className="btn rounded-3 action-btn-delete-my-orders-page mt-3" onClick={() => deleteBooking(myOrder._id)}><p><i className="fas fa-trash-alt me-2"></i>Cancel the order</p></button>
                                             </div>
                                         </div>
                                     </div>

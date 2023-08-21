@@ -14,7 +14,7 @@ const ReviewsInHome = () => {
             .then(res => res.json())
             .then(data => setReviews(data))
             .finally(() => setLoading(false));
-    }, [])
+    }, []);
     return (
         <div className="reviews-in-home-bg">
             <div className="container text-dark reviews-in-home-content px-4 px-lg-0">
@@ -27,8 +27,8 @@ const ReviewsInHome = () => {
                         {
                             reviews.map(review => (
                                 <div key={review._id} className="col">
-                                    <div className="card reviews-in-home-page-card border-0 rounded-0 h-100">
-                                        <div className="reviews-in-home-page-card-name my-4">
+                                    <div className="card reviews-in-home-page-card border-0 rounded-3 h-100">
+                                        <div className="reviews-in-home-page-card-name my-4 rounded-end">
                                             <h5 className="card-title text-center m-0 py-2 text-white">{review?.name}</h5>
                                         </div>
                                         <div className="card-body">
