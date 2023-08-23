@@ -1,5 +1,7 @@
 # Camsta -- a action camera shop
 
+*This was a task for a course of programming hero in 2021*
+
 ## Table of contents
 
 - [Overview](#overview)
