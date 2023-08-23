@@ -77,53 +77,73 @@ npm start
 
 ### Screenshot
 
-- homepage at larger devices
+- landing page at larger devices
 
-![screenshot 1](./src/images/screenshots/homepage-full-larger-device.png)
+![screenshot 1](./src/images/screenshots/landing-full-page.png)
 
 - all products at larger devices
 
-![screenshot 2](./src/images/screenshots/products-fullpage-larger-device.png)
+![screenshot 2](./src/images/screenshots/all-products.png)
 
 - products details at larger devices
 
-![screenshot 3](./src/images/screenshots/product-details-fullpage-larger-device.png)
+![screenshot 3](./src/images/screenshots/product-details.png)
 
 - order information at larger devices
 
-![screenshot 4](./src/images/screenshots/order-info-modal-fullpage-larger-device.png)
+![screenshot 4](./src/images/screenshots/order-information.png)
 
 - login page at larger devices
 
-![screenshot 5](./src/images/screenshots/login-fullpage-larger-device.png)
+![screenshot 5](./src/images/screenshots/login.png)
 
 - registration page at larger devices
 
-![screenshot 6](./src/images/screenshots/registration-fullpage-larger-device.png)
+![screenshot 6](./src/images/screenshots/registration.png)
 
 - all orders list when user is admin
 
-![screenshot 7](./src/images/screenshots/all-orders-fullpage-larger-device.png)
+![screenshot 7](./src/images/screenshots/manage-all-orders-admin-user.png)
 
 - add new product page when user is admin
 
-![screenshot 8](./src/images/screenshots/add-new-product-fullpage-larger-device.png)
+![screenshot 8](./src/images/screenshots/add-new-product-admin-user.png)
+
+- manage all products page when user is admin
+
+![screenshot 9](./src/images/screenshots/manage-all-products-admin-user.png)
+
+- manage all feedbacks page when user is admin
+
+![screenshot 10](./src/images/screenshots/manage-all-feedbacks-admin-user.png)
+
+- make an admin page when user is admin
+
+![screenshot 11](./src/images/screenshots/make-admin-admin-user.png)
 
 - dashboard home page from normal user
 
-![screenshot 9](./src/images/screenshots/dashboard-home-page-larger-device.png)
+![screenshot 12](./src/images/screenshots/dashboard-normal-user.png)
 
 - my order page when user is a normal user
 
-![screenshot 10](./src/images/screenshots/my-order-fullpage-larger-device.png)
+![screenshot 13](./src/images/screenshots/my-order-normal-user.png)
+
+- give feedback page when user is a normal user
+
+![screenshot 14](./src/images/screenshots/feedback-form-normal-user.png)
+
+- see all feedbacks when user is a normal user
+
+![screenshot 15](./src/images/screenshots/all-feedback-normal-user.png)
 
 - when navbar is opened at smaller devices
 
-![screenshot 11](./src/images/screenshots/navbar-opened-smaller-device.png)
+![screenshot 16](./src/images/screenshots/navbar-opened-smaller-device.png)
 
 - another ss when device is smaller
 
-![screenshot 12](./src/images/screenshots/products-smaller-device.png)
+![screenshot 17](./src/images/screenshots/products-smaller-device.png)
 
 ## My process
 
